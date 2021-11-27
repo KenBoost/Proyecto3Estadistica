@@ -37,8 +37,8 @@ function validar(total, hombre, mujer) {
     return false;
   }
   const totalInput = parseInt(hombre) + parseInt(mujer);
-  if (total != totalInput) {
-    alert("La suma de hombres y mujeres deben ser identicas al total");
+  if (totalInput > total) {
+    alert("La suma de hombres y mujeres es mayor al total");
     return false;
   }
   return true;
