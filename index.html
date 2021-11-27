@@ -1,107 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proyecto 3</title>
     <script src="index.js"></script>
     <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <!--Header-------------------->
     <header>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="equipo.html">Equipo de trabajo</a>
-        </nav>
-        <br>
-        <section class="textos-header">
-            <h1>Proyecto 3 Estadística Inferencial</h1>
-            <h2>III Cuatrimestre-2021</h2>
-        </section>
-        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
-                style="height: 100%; width: 100%;">
-                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                    style="stroke: none; fill: rgb(255, 255, 255);"></path>
-            </svg></div>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="equipo.html">Equipo de trabajo</a>
+      </nav>
+      <br />
+      <section class="textos-header">
+        <h1>Proyecto 3 Estadística Inferencial</h1>
+        <h2>III Cuatrimestre-2021</h2>
+      </section>
+      <div class="wave" style="height: 150px; overflow: hidden">
+        <svg
+          viewBox="0 0 500 150"
+          preserveAspectRatio="none"
+          style="height: 100%; width: 100%"
+        >
+          <path
+            d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+            style="stroke: none; fill: rgb(255, 255, 255)"
+          ></path>
+        </svg>
+      </div>
     </header>
     <!--MAIN--------------------->
     <main>
-        <section class="contenido">
-            <h2 class="titulo">Diferencia entre 2 proporciones</h2>
-            <div class="separado">
-                <div class="parte1">
-                    <h3 class="titulo2">Ingrese los Datos</h3>
-                    <div class="agrupado">
-                        <p>Personas entrevistadas</p>
-                        <input type="text" id="total" placeholder="Total..." />
-                    </div>
-                    <br>
-                    <div class="agrupado">
-                        <p>Hombres con automóvil</p>
-                        <input type="text" id="hombre" placeholder="Cantidad..." />
-                    </div>
-                    <br>
-                    <div class="agrupado">
-                        <p>Mujeres con automóvil</p>
-                        <input type="text" id="mujeres" placeholder="Cantidad..."/>
-                    </div>
-                </div>
-                <button class="boton1" onclick="calcular()"><span>Calcular </span></button>
-                <div class="parte2">
-                    <h3 class="titulo2">Resultado</h3>
-                    <p>Total #1</p>
-                    <input type="text" id="negativo" />
-                    <br>
-                    <br>
-                    <br>
-                    <p>Total #2</p>
-                    <input type="text" id="positivo" />
-                    <br />
-                    <br />
-                    <br />
-                     <div class="resultado">
-                        <input type="text" id="negativo2" />
-                        <br>
-                        <label><</label>
-                        <br>
-                        <label>P1-P2</label>
-                        <br>
-                        <label><</label>
-                        <br>
-                        <input type="text" id="positivo2" />
-                     </div>
-                </div>
+      <section class="contenido">
+        <h2 class="titulo">Diferencia entre 2 proporciones</h2>
+        <div class="separado">
+          <div class="parte1">
+            <h3 class="titulo2">Ingrese los Datos</h3>
+            <div class="agrupado">
+              <p>Personas entrevistadas</p>
+              <input type="text" id="total" placeholder="Total..." />
             </div>
-        </section>
+            <br />
+            <div class="agrupado">
+              <p>Hombres con automóvil</p>
+              <input type="text" id="hombre" placeholder="Cantidad..." />
+            </div>
+            <br />
+            <div class="agrupado">
+              <p>Mujeres con automóvil</p>
+              <input type="text" id="mujeres" placeholder="Cantidad..." />
+            </div>
+          </div>
+          <button class="boton1" onclick="calcular()">
+            <span>Calcular </span>
+          </button>
+          <div class="parte2">
+            <h3 class="titulo2">Resultado</h3>
+            <p>Total #1</p>
+            <input type="text" id="negativo" />
+            <br />
+            <br />
+            <br />
+            <p>Total #2</p>
+            <input type="text" id="positivo" />
+            <br />
+            <br />
+            <br />
+            <div class="resultado">
+              <input type="text" id="negativo2" />
+              <br />
+              <label><</label>
+              <br />
+              <label>P1-P2</label>
+              <br />
+              <label><</label>
+              <br />
+              <input type="text" id="positivo2" />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!---FOOTER---------------->
     <footer>
-        <h2>Proyecto 3 Estadistica Inferencial</h2>
-        <br><br>
+      <h2>Proyecto 3 Estadistica Inferencial</h2>
+      <br /><br />
 
-        <div class="contenedor-footer">
-            <div class="texto_info">
-                <div class="content-fu">
-                    <h4>Universidad</h4>
-                    <p>Universidad Técnica Nacional</p>
-                </div>
-                <div class="content-fu">
-                    <h4>Curso</h4>
-                    <p>Estadística Inferencial</p>
-                </div>
-                <div class="content-fu">
-                    <h4>Profesora</h4>
-                    <p>Sandra Rodríguez Herrera</p>
-                </div>
-            </div>
-
+      <div class="contenedor-footer">
+        <div class="texto_info">
+          <div class="content-fu">
+            <h4>Universidad</h4>
+            <p>Universidad Técnica Nacional</p>
+          </div>
+          <div class="content-fu">
+            <h4>Curso</h4>
+            <p>Estadística Inferencial</p>
+          </div>
+          <div class="content-fu">
+            <h4>Profesora</h4>
+            <p>Sandra Rodríguez Herrera</p>
+          </div>
         </div>
-        <h2 class="titulo-final">&copy;<a href="equipo.html">Equipo de trabajo</a> | Todos los derechos Reservados</h2>
+      </div>
+      <h2 class="titulo-final">
+        &copy;<a href="equipo.html">Equipo de trabajo</a> | Todos los derechos
+        Reservados
+      </h2>
     </footer>
-    </body>
-
-    </html>
+  </body>
+</html>
